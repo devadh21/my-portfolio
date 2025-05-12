@@ -22,15 +22,11 @@ export default function Hero() {
   //   });
   // }
   return (
-    <section className="section_hero_style bg-[url('/img/bg_hero.jpg')] bg-cover  ">
+    <section className="section_hero_style  bg-slate-400  ">
       {/* <div className="absolute top-0 left-0 w-full h-full dark:bg-black bg-gray-200 opacity-7  "></div> */}
       <div className=" dark:bg-bg-color bg-bg-color-light opacity-90">
         <div className="container full-screen flex flex-col-reverse justify-center items-center sm:flex-row sm:gap-3     ">
           <motion.div
-            // className="flex justify-center w-full "
-            // initial={framerMotionInitial}
-            // animate={framerMotionAnimat}
-            // transition={framerMotionTransition}
             variants={fadeIn("right",2,0.2)}
             initial="hidden"
             whileInView={"show"}
@@ -68,18 +64,15 @@ export default function Hero() {
             whileInView={"show"}
             viewport={{once:false,amount:0.6}}
             className="w-full  flex justify-center items-center"
-            // initial={framerMotionInitialImg}
-            // animate={framerMotionAnimat}
-            // transition={framerMotionTransition}
           >
             <div className="relative">
               <Image
-                src="/img/bg_hero.jpg"
+                src="/img/hero1.jpg"
                 alt="sample image"
                 width={650}
                 height={650}
                 priority={true}
-                className="object-fill "
+                className="object-fill rounded-lg "
               />
             </div>
           </motion.div>

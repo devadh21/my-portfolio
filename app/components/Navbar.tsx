@@ -3,7 +3,7 @@ import { Fragment, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import hero from "../../public/img/hero2.webp";
+import hero from "../../public/img/logo.png";
 
 import { socialMediaIcons, menuLinks } from "../data";
 import ButtonMenuHamburger from "./ui/ButtonMenuHamburger";
@@ -74,7 +74,7 @@ export default function Navbar() {
             alt="logo"
           />
           <span className="text-color-text-light dark:text-color-text text-[22px]  ">
-            Flowbite
+            My portfolio
           </span>
         </a>
         {/* navbar menu screen */}
