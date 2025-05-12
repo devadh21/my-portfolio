@@ -35,7 +35,7 @@ export default function Hero() {
           >
             <div className=" w-full  flex flex-col justify-center items-center mb-6 dark:text-color-text">
               <p className="mt-2 w-full">Hello,I'm</p>
-              <h1 className="text-[55px] text-primary w-full">Hicham</h1>
+              <h1 className="text-[55px] text-primary w-full">Dev-adh</h1>
               <div className="w-full">
                 <p>Web Designer & Developer</p>
                 <hr className="my-2 h-1  border-t-0 bg-transparent bg-gradient-to-r from-transparent via-primary to-transparent opacity-25 dark:opacity-100" />
