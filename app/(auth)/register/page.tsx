@@ -75,7 +75,7 @@ export default function Register() {
       setLabelComformPwd("");
     }
 
-    // handle register
+    // handle register 
     try {
       const user = await fetch("/api/register", {
         method: "POST",

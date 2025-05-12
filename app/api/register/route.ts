@@ -2,13 +2,14 @@ import { NextResponse ,NextRequest } from 'next/server'
 import User from "../../models/user";
 import dbConnect from "../../config/dbConnect";
 
-export  async function POST(req:NextRequest) {
+export  async function POST(req:NextRequest) { 
      try {
           await dbConnect(); 
           interface IDataReq{
                I_user_name:string, 
                I_email:string, 
                I_password:string }
+               
           const { I_user_name, I_email, I_password }:IDataReq = await req.json();
 
           interface IUser{
