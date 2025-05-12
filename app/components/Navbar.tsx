@@ -73,7 +73,7 @@ export default function Navbar() {
             className="h-13 w-13 mr-3   "
             alt="logo"
           />
-          <span className="text-color-text-light dark:text-color-text text-[22px]  ">
+          <span className="text-color-text-light dark:text-primary text-[22px]   ">
             My portfolio
           </span>
         </a>

@@ -211,7 +211,7 @@ export const cardInfoContact = [
       </svg>
     ),
     title: "location",
-    desc: "Centre old berhil-taroudant",
+    desc: "morroco",
   },
   {
     id: 3,
@@ -247,6 +247,7 @@ export const cardListsPortfolio =[
       img: "/img/honeyStore.png",
       title: 'Honey Store',
   },
+  
 ]
 
 export  const cardListsServices = [
