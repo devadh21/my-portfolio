@@ -211,7 +211,7 @@ export const cardInfoContact = [
       </svg>
     ),
     title: "location",
-    desc: "morroco",
+    desc: "morocco",
   },
   {
     id: 3,
