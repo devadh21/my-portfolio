@@ -8,7 +8,7 @@ import { useEffect,useState } from "react";
 export default function Login() {
   interface IFormData {
     email: string;
-    password: string; 
+    password: string;  
   }
   const router = useRouter();
   const [error, setError] = useState("");
