@@ -22,6 +22,7 @@ export default function Register() {
     comfermPassword: string;
   }
   const [formData, setFormData] = useState<IFormDataType | null>(null);
+  const [spinner, setSpinner] = useState(false);
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -30,6 +31,7 @@ export default function Register() {
   // handle Register
   const handleRegister = async (e: React.FormEvent<HTMLFormElement>) => { 
     e.preventDefault();
+    setSpinner(true);
 
     // Check is Email existed 
     try {
@@ -45,6 +47,7 @@ export default function Register() {
       if (isEmailExist) {
         setLabelEmail("red");
         setErrorMsg(`${formData.email} Already exist`);
+        setSpinner(false);
         return;
       } else {
         setErrorMsg("");
@@ -59,6 +62,7 @@ export default function Register() {
     if (formData.password !== formData.comfermPassword) {
       setLabelComformPwd("red");
       setErrorMsg("Compform Password no match");
+      setSpinner(false);
       return;
     }
 
@@ -68,6 +72,7 @@ export default function Register() {
     if (passwordIsValide !== 0) {
       setLabelPwd("red");
       setErrorMsgPassword(true);
+      setSpinner(false);
       return;
     } else {
       setErrorMsgPassword(false);
@@ -88,7 +93,7 @@ export default function Register() {
           I_password: formData.password,
         }),
       });
-      console.log(user)
+      
       // reset form and redirect to login page
       if (user.ok) {
         setErrorMsg("");
@@ -210,10 +215,18 @@ export default function Register() {
                     Conferm password
                   </label>
                 </div>
-
-                <button type="submit" className="style-btn  ">
-                  Registe
-                </button>
+                                <div className="flex justify-center items-center mb-6 ">
+                  {spinner ? (
+                    <div className="flex justify-center items-center gap-2">
+                      <div className="w-6 h-6  border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+                      <span className="p-2">Processing...</span>
+                    </div>
+                  ) : (
+                    <button type="submit" className="w-full style-btn">
+                      Register
+                    </button>
+                  )}
+                </div>
               </form>
             </div>
           </div>
