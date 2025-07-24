@@ -219,7 +219,7 @@ export default function Register() {
                   {spinner ? (
                     <div className="flex justify-center items-center gap-2">
                       <div className="w-6 h-6  border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-                      <span className="p-2">Processing...</span>
+                      <span className="p-2">Wait...</span>
                     </div>
                   ) : (
                     <button type="submit" className="w-full style-btn">
