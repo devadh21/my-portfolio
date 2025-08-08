@@ -166,6 +166,7 @@ export const cardsSkills = [
   },
 ];
 
+// data card Info Contact
 export const cardInfoContact = [
   {
     id: 1,
@@ -233,7 +234,7 @@ export const cardInfoContact = [
       </svg>
     ),
     title: "email",
-    desc: "devadh21@gmail.com",
+    desc: "contact@devadh.com",
   },
 ];
 
