@@ -1,8 +1,9 @@
 "use client";
 import { cardInfoContact } from "../data";
-import FormContact from "./ui/FormContact.jsx";
+import ContactForm from "./ui/ContactForm";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
+
 
 export default function Contact() {
   
@@ -58,7 +59,7 @@ export default function Contact() {
               <h1 className="text-[18px] mb-4  uppercase font-meduim font-bolde text-center underline  ">
                 just message me
               </h1>
-              <FormContact />
+              <ContactForm />
             </motion.div>
           </div>
         </div>
