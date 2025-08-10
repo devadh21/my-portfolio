@@ -7,6 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { parentTextTapping, fadeIn, childrenTextTapping } from "../../variants";
 
+
 export default  function  About() {
   const text = "i am an full stack developer.";
   return (
