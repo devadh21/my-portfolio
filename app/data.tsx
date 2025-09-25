@@ -247,6 +247,12 @@ export const cardListsPortfolio =[
       img: "/img/honeyStore.png",
       title: 'Honey Store',
   },
+  {
+      id:2,
+      href: "https://hmizatcom.devadh.com/",
+      img: "/img/hmizatcom.png",
+      title: 'Hmizatcom Marketplace',
+  },
   
 ]
 
