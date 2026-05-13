@@ -259,6 +259,12 @@ export const cardListsPortfolio =[
       img: "/img/m3alamcom.png",
       title: 'M3alamCom - Professional Tradespeople Marketplace',
   },
+      {
+      id:4,
+      href: "https://nooroptic.devadh.com/",
+      img: "/img/nooroptic.png",
+      title: 'Noor Optic - EyeWear website',
+  },
   
 ]
 
